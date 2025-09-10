@@ -12,10 +12,10 @@ abstract class Pessoa implements Serializable {
     public String getNome() { return nome; }
     public String getTelefone() { return telefone; }
 
-    public abstract TipoPessoa getTipo();
+    public abstract String getTipo();
 
     @Override
     public String toString() {
-        return getTipo().toString() + ": " + nome + " | Tel: " + telefone;
+        return getTipo() + ": " + nome + " | Tel: " + telefone;
     }
 }
