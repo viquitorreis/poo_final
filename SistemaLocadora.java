@@ -15,9 +15,11 @@ public class SistemaLocadora extends JFrame {
         setDefaultCloseOperation(EXIT_ON_CLOSE);
         setLocationRelativeTo(null);
 
+        // JPAnel cria um layout de borda
         JPanel painel = new JPanel(new BorderLayout());
         areaTexto = new JTextArea();
         areaTexto.setEditable(false);
+        // JScrollPane para rolagem
         painel.add(new JScrollPane(areaTexto), BorderLayout.CENTER);
 
         // Aumentei para 3x3 para caber mais botões

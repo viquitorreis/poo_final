@@ -12,4 +12,4 @@ execute: build
 	@$(MAKE) clean --no-print-directory
 
 .PHONY: run
-run: execute
+run: execute clean
